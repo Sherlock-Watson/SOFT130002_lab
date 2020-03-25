@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: #f6f6f6;
+}
+
+.contents {
+    padding: 10px;
+    margin: 20px 150px;
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-right: 150px;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+p {
+    padding: 10px 0;
+    line-height:28px;
+}
+
+blockquote {
+    font-family: "Lucida Calligraphy", cursive;
+    padding: 20px 0;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 35%;
+    background-color: #ffffff;
+    border: #56707f solid 1px;
+    border-radius: 3px;
+    color: #000000
+}
+
+select {
+    background-color: #ffffff;
+    border: #56707f solid 1px;
+    color: #000000
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 2em;
+}
+
+input[type="button"],input[type="submit"]  {
+    background-color: dodgerblue;
+    border: dodgerblue solid 1px;
+    width: 4em;
+    color: white;
+}
+
+input[type="submit"],input[type="checkbox"], input[type="radio"], select:hover {
+    cursor: pointer;
+}
+
+input[type="text"],input[type="password"],input[type="tel"] {
+    background-color: rgba(255, 245, 238, 0.58);
+}
+
+textarea {
+    height: 15em;
+}
