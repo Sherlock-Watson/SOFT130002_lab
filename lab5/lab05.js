@@ -41,7 +41,6 @@ function timeTest() {
     if (new Date().getSeconds() >= 5 && count < 10) {
         mul.value *= 2;
         count++;
-        console.log(count);
     }
     else {
         window.clearInterval(myVar);
