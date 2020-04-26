@@ -36,18 +36,17 @@ let mul = document.getElementById("mul");
 mul.value = 1;
 let count = 0;
 // mul.addEventListener('mouseover',timeTest);
+let myVar = window.setInterval(function(){timeTest()},5000);
 function timeTest() {
-    // mul.value = 1;
-    // let count = 0;
-    const interval = window.setInterval(function () {
-        if (new Date().getSeconds() === 0 || count >= 9) {
-            window.clearInterval(interval);
-        }
+    if (new Date().getSeconds() >= 5 && count < 10) {
         mul.value *= 2;
         count++;
-    }, 5000);
+        console.log(count);
+    }
+    else {
+        window.clearInterval(myVar);
+    }
 }
-timeTest();
 
 //3. 判断输入框most里出现最多的字符，并统计出来。统计出是信息在most_result输入框内以"The most character is:" + index + " times:" + max的形式显示。
 //如果多个出现数量一样则选择一个即可。
