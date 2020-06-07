@@ -130,7 +130,7 @@ function outputSinglePainting($row) {
 ![images](images/screenshots/exercise8(1).png)
 
 ### Exercise 9
-####执行SQL语句的方式
+#### 执行SQL语句的方式
 `DriverManager`：用于管理`JDBC`驱动的服务类。主要功能是获取`Connection`对象。
 
 `Connection`：代表数据库连接对象，每个`Connection`代表一个物理连接会话。
@@ -143,8 +143,8 @@ function outputSinglePainting($row) {
 
 >`boolean execute(String sql)throws SQLException`：可执行任何`SQL`语句。如果执行后第一个结果为`ResultSet`（即执行了查询语句），则返回`true`；如果执行了`DDL、DML`语句，则返回`false`。返回结果为`true`，则随后可通过该`Statement`对象的`getResultSet()`方法获取结果集对象（`ResultSet`类型），返回结果为`false`，则可通过`Statement`对象的`getUpdateCount()`方法获得受影响的行数。
 
-——>PrepareStatement：为Statement的子接口，可预编译SQL 语句，常用语执行多条结构相同，仅值不同的SQL 语句，见下例。同样具有Statement对象常用的三个方法，但用法不同，因为已经预编译了SQL 月，所以无需再在方法中写sql语句，只需setString方法设置参数值即可，如代码中。
-####好处
+PrepareStatement：为Statement的子接口，可预编译SQL 语句，常用语执行多条结构相同，仅值不同的SQL 语句，见下例。同样具有Statement对象常用的三个方法，但用法不同，因为已经预编译了SQL 月，所以无需再在方法中写sql语句，只需setString方法设置参数值即可，如代码中。
+#### 好处
 使用`PreparedStatement`比使用`Statement`多了三个好处：
 
 >`PreparedStatement`预编译`SQL`语句，性能更好，执行更快。
